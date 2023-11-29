@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Sniglet|Raleway:900");
+
+
+
+/* Add a class to hide/show steps */
+.step {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  column-gap: 36px;
+
+
+}
+
+
+body {
+	padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+font-family: 'Sniglet', cursive;
+	color: midnightblue;
+	font-weight: bold;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(66.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+line-height: 1.5;
+
+}
+
+p {
+  
+  padding: 0;
+  line-height: 1.5;
+font-size: 2rem;
+margin-bottom: 20px;
+
+
+}
+	p.lb2{
+  line-height: 1.5;
+  font-size: 3rem;
+top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+h4 {
+ display: flex;
+  margin: 0;
+  padding: 0;
+font-size: 2rem;
+margin-bottom: 2%;
+text-align: center;
+justify-content: center;
+line-height: 0%;
+font-weight: lighter;
+margin-bottom: 20px;
+}
+.app {
+
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto; 
+  background-color: rgba(255, 255, 255, 0.9);
+ border-radius: 5px;
+  padding: 20px 80px;
+
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  column-gap: 36px;
+  border: none;
+  outline: none;
+  
+
+  
+  
+}
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 0;
+
+}
+.item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+ 
+}
+
+.item, .item1 {
+      filter: grayscale(0%); /* Set default grayscale to 0% (no grayscale) */
+      transition: filter 0.3s ease-in-out;
+ 
+    }
+
+    /* Style inactive elements with grayscale */
+    .item.inactive, .item1.inactive {
+      filter: grayscale(100%);
+	
+    }
+
+.item span {
+  margin-right: 0px
+  
+  /* Adjust the font size as needed */
+}
+.item1 {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  margin: 0 auto;
+
+}
+.radio {
+  display: none;
+ 
+}
+.radio ~ span {
+  font-size: 7rem;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+
+}
+
+.radio:checked ~ span, span:hover {
+
+
+  font-size: 9rem;
+	transform: scale(1.2);
+}
+
+label{
+ font-weight: bold;
+padding-bottom: 0%;
+margin-bottom: 0%;
+ 
+
+}
+
+ span img {
+      transition: transform 0.3s ease;
+	padding-bottom: 0%;
+    }
+
+
+    input.radio:checked + span img, span:hover img {
+      transform: scale(1.2); /* Adjust the scale factor as needed */
+   
+ }
+img{
+	border-radius: 50px;
+	
+}
+.btn-box {
+	width: 50%;
+	margin-top: 30px auto;
+	text-align: center;
+}
+
+
+
+form button {
+	
+	width: 120px;
+	height: 70px;
+	background: linear-gradient(to right, #ff105f, #ffad06);
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+  font-size: 20px;
+}
+
+p.experience-text {
+  margin-bottom: 5%;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+textarea, input{
+	width: 700px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-size: 2em;
+  font-family: 'Sniglet', cursive;
+	color: #1e0101;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+textarea:focus, input:focus{
+	border: solid 3px #77bde0;	
+}
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+
+
+button {
+  margin-top: 50px;
+}
+
+/* Optionally, you can adjust the styling of the button */
+button {
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+.modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .modal img {
+      width: 100px; /* Adjust the width of your check icon */
+      height: 100px; /* Adjust the height of your check icon */
+    }
+
