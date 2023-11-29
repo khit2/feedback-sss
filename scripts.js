@@ -96,10 +96,7 @@ function submitForm() {
   const commentsValue = document.getElementById("Comments").value;
   // Display results
 	openModal() 
- alert(
-    `Feedback: ${feedbackValue}\nServant: ${servantValue}\nName: ${nameValue}\nComments: ${commentsValue}`
-  );
- 
+
   // Redirect to a new page or perform other actions after submission
  /* window.location.href = 'new.html';*/
 }
