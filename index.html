@@ -1,132 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Feedback</title>
-    <link rel="stylesheet" href="stylesss.css">
-    <link rel="icon" href="favicon.png">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Feedback</title>
+  <link rel="stylesheet" href="stylesss.css">
+  <link rel="icon" href="favicon.png">
+</head>
 
-  <body>
+<body>
 
-    <form method="POST" id="my-form" action="">
-      <div class="app">
-        <h1>Your Feedback Matters</h1>
-        <!-- Step 1 -->
-        <p id="error-message"></p>
-        <div class="step" id="step1">
-          <p class="experience-text">How was your experience?</p>
+  <form method="POST" id="my-form" action="">
+    <div class="app">
+      <h1>Your Feedback Matters</h1>
+      <!-- Step 1 -->
+      <p id="error-message"></p>
+      <div class="step" id="step1">
+        <p class="experience-text">How was your experience?</p>
 
-          <div class="container">
-            <!-- ... (existing code for step 1) -->
-            <div class="item">
-              <label for="4">
-                <input class="radio" type="radio" name="feedback" id="4" value="Excellent" onclick="handleFeedbackClick('4')">
-                <span style="border: none;">😍</span>
-                <h4 style="line-height: .4; font-size: 24px;">Excellent</h4>
-              </label>
-            </div>
-
-            <div class="item">
-              <label for="3">
-                <input class="radio" type="radio" name="feedback" id="3" value="Good" onclick="handleFeedbackClick('3')">
-                <span>😁</span>
-                <h4 style="line-height: .4; font-size: 24px;">Good</h4>
-              </label>
-            </div>
-
-
-
-            <div class="item">
-              <label for="2">
-                <input class="radio" type="radio" name="feedback" id="2" value="Fair" onclick="handleFeedbackClick('2')">
-                <span>😐</span>
-                <h4 style="line-height: .4; font-size: 24px;">Fair</h4>
-              </label>
-            </div>
-
-            <div class="item">
-              <label for="1">
-                <input class="radio" type="radio" name="feedback" id="1" value="Poor" onclick="handleFeedbackClick('1')">
-                <span>🙁</span>
-                <h4 style="line-height: .4; font-size: 24px;">Poor</h4>
-              </label>
-            </div>
-
-
-
-            <div class="item">
-              <label for="0">
-                <input class="radio" type="radio" name="feedback" id="0" value="Very Poor" onclick="handleFeedbackClick('0')">
-                <span>😠</span>
-                <h4 style="line-height: .4; font-size: 24px;">Very Poor</h4>
-              </label>
-            </div>
+        <div class="container">
+          <!-- ... (existing code for step 1) -->
+          <div class="item">
+            <label for="4">
+              <input class="radio" type="radio" name="feedback" id="4" value="Excellent"
+                onclick="handleFeedbackClick('4')">
+              <span style="border: none;">😍</span>
+              <h4 style="line-height: .4; font-size: 24px;">Excellent</h4>
+            </label>
           </div>
 
-          <button type="button" onclick="nextStep(2)">Next</button>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="step" id="step2" style="display: none;">
-          <p class="lb2">Who served you?</p>
-          <p id="error-message"></p>
-
-          <div class="container">
-            <!-- ... (existing code for step 2) -->
-            <div class="item1">
-          <label for="5">
-            <input class="radio" type="radio" name="servant" id="5" value="John" onclick="handleServantClick('5')">
-            <span> <img src="img_avatar.png" style="width: 100%;" name="Servant" value="John">
-            </span>
-            <h4>John</h4>
-          </label>
-        </div>
-
-
-        <div class="item1">
-          <label for="6">
-            <input class="radio" type="radio" name="servant" id="6" value="Mary">
-            <span> <img src="img_avatar2.png" style="width: 100%;" name="Servant" value="Mary" onclick="handleServantClick('6')">
-            </span>
-            <h4>Mary</h4>
-          </label>
-        </div>
-
-
-        <div class="item1">
-          <label for="7">
-            <input class="radio" type="radio" name="servant" id="7" value="Mark">
-            <span> <img src="img_avatar.png" style="width: 100%;" name="Servant" value="Mark" onclick="handleServantClick('7')">
-            </span>
-            <h4>Mark</h4>
-          </label>
-        </div>
-            
+          <div class="item">
+            <label for="3">
+              <input class="radio" type="radio" name="feedback" id="3" value="Good" onclick="handleFeedbackClick('3')">
+              <span>😁</span>
+              <h4 style="line-height: .4; font-size: 24px;">Good</h4>
+            </label>
           </div>
-	  <button type="button" onclick="prevStep(1)">Back</button>
-          <button type="button" onclick="nextStep(3)">Next</button>
+
+
+
+          <div class="item">
+            <label for="2">
+              <input class="radio" type="radio" name="feedback" id="2" value="Fair" onclick="handleFeedbackClick('2')">
+              <span>😐</span>
+              <h4 style="line-height: .4; font-size: 24px;">Fair</h4>
+            </label>
+          </div>
+
+          <div class="item">
+            <label for="1">
+              <input class="radio" type="radio" name="feedback" id="1" value="Poor" onclick="handleFeedbackClick('1')">
+              <span>🙁</span>
+              <h4 style="line-height: .4; font-size: 24px;">Poor</h4>
+            </label>
+          </div>
+
+
+
+          <div class="item">
+            <label for="0">
+              <input class="radio" type="radio" name="feedback" id="0" value="Very Poor"
+                onclick="handleFeedbackClick('0')">
+              <span>😠</span>
+              <h4 style="line-height: .4; font-size: 24px;">Very Poor</h4>
+            </label>
+          </div>
         </div>
 
-        <!-- Step 3 -->
-        <div class="step" id="step3" style="display: none;">
-          <p class="lb2">Please enter your Name</p>
-
-          <section class="container1">
-            <h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Name:</h4>
-            <input type="text" name="Name" id="Name" placeholder="(Optional)">
-            <h4 style="top: 50%; width: 100%;  margin-top: 50px; justify-content: left;">Comments/Suggestions:</h4>
-            <textarea id="Comments" type="text" name="Comments"></textarea>
-          </section>
-	  <button type="button" onclick="prevStep(2)">Back</button>
-          <button type="submit" id="submit" onclick="submitForm()">Submit</button>
-        </div>
+        <button type="button" onclick="nextStep(2)">Next</button>
       </div>
-    </form>
 
-    <!-- Modal -->
+      <!-- Step 2 -->
+      <div class="step" id="step2" style="display: none;">
+        <p class="lb2">Who served you?</p>
+        <p id="error-message"></p>
+
+        <div class="container">
+          
+          <!-- ... (existing code for step 2) -->
+          <div class="item1">
+            <label for="5">
+              <input class="radio" type="radio" name="servant" id="5" value="Sharon" onclick="handleServantClick('5')">
+              <span> <img src="sharon.jpg" style="width: 100%;" name="Servant" value="Sharon">
+              </span>
+              <h4>Sharon</h4>
+            </label>
+          </div>
+
+
+          <div class="item1">
+            <label for="6">
+              <input class="radio" type="radio" name="servant" id="6" value="Carle">
+              <span> <img src="carle.jpg" style="width: 100%;" name="Servant" value="Carle"
+                  onclick="handleServantClick('6')">
+              </span>
+              <h4>Carle</h4>
+            </label>
+          </div>
+
+
+          <div class="item1">
+            <label for="7">
+              <input class="radio" type="radio" name="servant" id="7" value="Christine">
+              <span> <img src="Christine.jpg" style="width: 100%;" name="Servant" value="Christine"
+                  onclick="handleServantClick('7')">
+              </span>
+              <h4>Christine</h4>
+            </label>
+          </div>
+
+        </div>
+        <button type="button" onclick="prevStep(1)">Back</button>
+        <button type="button" onclick="nextStep(3)">Next</button>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step" id="step3" style="display: none;">
+        <p class="lb2">Please enter your Name</p>
+
+        <section class="container1">
+          <h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Name:</h4>
+          <input type="text" name="Name" id="Name" placeholder="(Optional)">
+          <h4 style="top: 50%; width: 100%;  margin-top: 50px; justify-content: left;">Comments/Suggestions:</h4>
+          <textarea id="Comments" type="text" name="Comments"></textarea>
+        </section>
+        <button type="button" onclick="prevStep(2)">Back</button>
+        <button type="submit" id="submit" onclick="submitForm()">Submit</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Modal -->
   <div id="myModal" class="modal">
     <img src="tick.png">
     <p>Thank you for your feedback!</p>
@@ -134,8 +139,8 @@
   </div>
 
 
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 
-  </body>
+</body>
 
 </html>
