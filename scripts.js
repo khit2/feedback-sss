@@ -96,12 +96,24 @@ function submitForm() {
   // Get input values
   const nameValue = document.getElementById("Name").value;
   const commentsValue = document.getElementById("Comments").value;
-  // Display results
+  const addressValue = document.getElementById("Address").value;
+  const ssnoValue = document.getElementById("Ssno").value;
+  const CpnoValue = document.getElementById("cpno").value;
+  const ReasonValue = document.getElementById("reason1").value;
+  const Reason1Value = document.getElementById("reason2").value;
+  const Reason2Value = document.getElementById("reason3").value;
+  const Reason3Value = document.getElementById("reason4").value;
+  const Reason4Value = document.getElementById("reason5").value;
+  const Reason5Value = document.getElementById("reason6").value;
 	openModal() 
 
   // Redirect to a new page or perform other actions after submission
  /* window.location.href = 'new.html';*/
 }
+
+
+ 
+
 
 // Add a function to handle the click on feedback items
 function handleFeedbackClick(radioId) {
@@ -144,3 +156,16 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 /*.then(() => {window.location.reload();})*/
 .catch(error => console.error('Error!',error.message))
 })
+
+function addDashes(input) {
+	input.value = input.value.replace(/\D/g, '')
+	.replace(/(\d{2})(\d{7})(\d{1})/, '$1-$2-$3');
+}
+function limitInputLength(inputElement, maxLength) {
+  if (inputElement.value.length > maxLength) {
+    inputElement.value = inputElement.value.slice(0, maxLength); // Trim the input
+    inputElement.setAttribute('disabled', 'disabled'); // Disable the input
+  } else {
+    inputElement.removeAttribute('disabled'); // Enable the input
+  }
+}
