@@ -300,11 +300,11 @@ button {
 
 /* Position the "next button" to the right */
 .next {
-  right: 350px;
+  right: 520px;
   border-radius: 3px 0 0 3px;
 }
 .prev{
-  left: 350px;
+  left: 520px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
