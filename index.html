@@ -7,6 +7,7 @@
   <title>User Feedback</title>
   <link rel="stylesheet" href="stylesss.css">
   <link rel="icon" href="favicon.png">
+
 </head>
 
 <body>
@@ -246,6 +247,37 @@
         <section class="container1">
           <h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Name:</h4>
           <input type="text" name="Name" id="Name" placeholder="(Optional)">
+	<h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Address:</h4>
+          <input type="text" name="Address" id="Address" placeholder="(Optional)">
+	<h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">SSS No:</h4>
+          <input type="text" name="Ssno" id="Ssno" oninput="addDashes(this)" >
+	<h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">CP No:</h4>
+          <input type="text" name="cpno" id="cpno" placeholder="(Optional)" maxlength="11" oninput="limitInputLength(this, 11)">
+	 
+
+   <h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Reasons:</h4>
+  <br> <br>
+
+ <div class="grid-container">
+  <input type="checkbox" id="reason1" name="reason1" value="Fast transaction and quality service">
+  <label for="reason1">Fast transaction and quality service</label>
+
+  <input type="checkbox" id="reason2" name="reason2" value="Courteous and friendly staff" >
+  <label for="reason2">Courteous and friendly staff</label>
+
+  <input type="checkbox" id="reason3" name="reason3" value="Clean, neat and orderly office" >
+  <label for="reason3">Clean, neat and orderly office</label>
+
+  <input type="checkbox" id="reason4" name="reason4" value="Slow transaction and poor service">
+  <label for="reason4">Slow transaction and poor servicey</label>
+
+<input type="checkbox" id="reason5" name="reason5" value="Rude and unfriendly staff">
+  <label for="reason5">Rude and unfriendly staff</label>
+
+<input type="checkbox" id="reason6" name="reason6" value="Dirty, untidy and disorganized office">
+  <label for="reason6">Dirty, untidy and disorganized office</label>
+  
+</div>
           <h4 style="top: 50%; width: 100%;  margin-top: 50px; justify-content: left;">Comments/Suggestions:</h4>
           <textarea id="Comments" type="text" name="Comments"></textarea>
         </section>
@@ -289,6 +321,8 @@
 
     // Initial display
     showSlides();
+
+    
   </script>
 
 
