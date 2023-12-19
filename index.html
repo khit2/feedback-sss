@@ -279,7 +279,7 @@
   
 </div>
           <h4 style="top: 50%; width: 100%;  margin-top: 50px; justify-content: left;">Comments/Suggestions:</h4>
-          <textarea id="Comments" type="text" name="Comments"></textarea>
+          <textarea id="Comments" type="text" name="Comments" onkeydown="moveFocus(event, 'submit')"></textarea>
         </section>
         <button type="button" onclick="prevStep(2)">Back</button>
         <button type="submit" id="submit" onclick="submitForm()">Submit</button>
