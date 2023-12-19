@@ -244,11 +244,11 @@
 
         <section class="container1">
           <h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Name:</h4>
-          <input type="text" name="Name" id="Name" placeholder="(Optional)">
+          <input type="text" name="Name" id="Name" placeholder="(Optional)" onkeydown="moveFocus(event, 'Address')">
 	<h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">Address:</h4>
-          <input type="text" name="Address" id="Address" placeholder="(Optional)">
+          <input type="text" name="Address" id="Address" placeholder="(Optional)" onkeydown="moveFocus(event, 'Ssno')">
 	<h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">SSS No:</h4>
-          <input type="text" name="Ssno" id="Ssno" oninput="addDashes(this)" >
+          <input type="text" name="Ssno" id="Ssno" oninput="addDashes(this)" onkeydown="moveFocus(event, 'cpno')">
 	<h4 style="top: 50%; width: 100%; margin-top: 50px; justify-content: left;">CP No:</h4>
           <input type="text" name="cpno" id="cpno" placeholder="(Optional)" maxlength="11" oninput="limitInputLength(this, 11)">
 	 
@@ -322,9 +322,16 @@
     // Initial display
     showSlides();
 
-    
+   
   </script>
-
+  <script>
+    function moveFocus(event, nextInputId) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById(nextInputId).focus();
+      }
+    }
+  </script>
 
 </body>
 
