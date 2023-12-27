@@ -445,7 +445,7 @@ input[type=checkbox]:checked:disabled+label:before {
   z-index: 1000;
 }
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
   .rotation-notification {
     display: block;
   }
