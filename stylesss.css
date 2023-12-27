@@ -430,3 +430,23 @@ input[type=checkbox]:checked:disabled+label:before {
   background-color: #bfb;
   border-color: #bfb;
 }
+/* Add this to your existing CSS */
+
+.rotation-notification {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f00; /* Adjust background color */
+  color: #fff; /* Adjust text color */
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+  .rotation-notification {
+    display: block;
+  }
+}
