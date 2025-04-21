@@ -145,7 +145,7 @@ function handleServantClick(radioId) {
   }
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwxwDOTfcbvhvShbmFYE4CI3U6y4DE5WQkHohyIYBlr3i5XkGTi7UjOac--IPF5Ve1P/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzpuXqLpUnzOOEjCqO3H4Bl41DwylfHWDe0R6b1I6bvl-eqeQEDoN9CHZrL5TwvITo/exec'
 const form = document.querySelector("form");
 
 form.addEventListener('submit', e => {
